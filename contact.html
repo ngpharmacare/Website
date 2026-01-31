@@ -24,7 +24,7 @@
                     <li><a href="index.html" data-tr="Ana Sayfa" data-en="Home">Home</a></li>
                     <li><a href="about.html" data-tr="Hakkımızda" data-en="About Us">About Us</a></li>
                     <li><a href="services.html" data-tr="Hizmetler" data-en="Services">Services</a></li>
-                  <!-- <li><a href="products.html" data-tr="Ürünler" data-en="Products">Products</a></li>--> 
+                    <li><a href="products.html" data-tr="Ürünler" data-en="Products">Products</a></li>
                     <li><a href="contact.html" data-tr="İletişim" data-en="Contact" class="active">Contact</a></li>
                                     <li class="language-switcher">
                         <button class="lang-btn active" data-lang="en">EN</button>
@@ -52,7 +52,17 @@
                     <h2 data-tr="Bize Mesaj Gönderin" data-en="Send Us a Message">Send Us a Message</h2>
                     <p class="form-intro" data-tr="Aşağıdaki formu doldurun, ekibimiz 24 saat içinde size geri dönecek." data-en="Fill out the form below and our team will get back to you within 24 hours.">Fill out the form below and our team will get back to you within 24 hours.</p>
                     
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" 
+                          action="https://formsubmit.co/ngpharmacareinfo@gmail.com" 
+                          method="POST">
+                        
+                        <!-- FormSubmit Hidden Fields -->
+                        <input type="hidden" name="_subject" value="New Contact from NG Pharma Website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="text" name="_honey" style="display:none">
+                        <!-- FormSubmit Hidden Fields End -->
+                        
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="firstName" data-tr="Ad *" data-en="First Name *">First Name *</label>
@@ -148,7 +158,7 @@
                             </div>
                             <div class="info-text">
                                 <h4 data-tr="E-posta" data-en="Email">Email</h4>
-                                <p data-tr="Genel: info@ngpharma.com" data-en="General: info@ngpharma.com">General: info@ngpharma.com<br data-tr="Satış: sales@ngpharma.com" data-en="Sales: sales@ngpharma.com">Sales: sales@ngpharma.com<br data-tr="Kariyer: careers@ngpharma.com" data-en="Careers: careers@ngpharma.com">Careers: careers@ngpharma.com</p>
+                                <p data-tr="Genel: info@ngpharma.com" data-en="General: info@ngpharma.com">General: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1970777f7659777e6971786b7478377a7674">[email&#160;protected]</a><br data-tr="Satış: sales@ngpharma.com" data-en="Sales: sales@ngpharma.com">Sales: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7605171a1305361811061e17041b175815191b">[email&#160;protected]</a><br data-tr="Kariyer: careers@ngpharma.com" data-en="Careers: careers@ngpharma.com">Careers: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5f3c3e2d3a3a2d2c1f31382f373e2d323e713c3032">[email&#160;protected]</a></p>
                             </div>
                         </div>
 
@@ -279,7 +289,7 @@
                     <ul>
                         <li><a href="about.html" data-tr="Hakkımızda" data-en="About Us">About Us</a></li>
                         <li><a href="services.html" data-tr="Hizmetler" data-en="Services">Services</a></li>
-                        <li><a href="products.html" data-tr="Ürünler" data-en="Products">Products</a></li>
+                    <!--   <li><a href="products.html" data-tr="Ürünler" data-en="Products">Products</a></li>--> 
                         <li><a href="contact.html" data-tr="İletişim" data-en="Contact">Contact</a></li>
                     </ul>
                 </div>
@@ -296,19 +306,4 @@
                 <div class="footer-col">
                     <h5>Contact Info</h5>
                     <ul>
-                        <li>Email: ngpharmacareinfo@gmail.com</li>
-                        <li>Phone: +90.....</li>
-                        <li>Address: 123 Science Park</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 NG Pharma & Care. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+                        <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c

@@ -124,56 +124,20 @@ if (tabButtons.length > 0 && categoryContents.length > 0) {
 }
 
 // ===================================
-// Contact Form Handling - PHP Backend
+// Contact Form Handling - FormSubmit
 // ===================================
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Disable submit button
+        // Show loading state
         const submitButton = this.querySelector('button[type="submit"]');
         const originalText = submitButton.textContent;
         submitButton.disabled = true;
         submitButton.textContent = currentLang === 'tr' ? 'Gönderiliyor...' : 'Sending...';
         
-        // Get form data
-        const formData = new FormData(this);
-        
-        // Send to PHP backend
-        fetch('send_email.php', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                // Success message
-                const successMessage = currentLang === 'tr' 
-                    ? '✅ Mesajınız başarıyla gönderildi! 24 saat içinde size geri döneceğiz.'
-                    : '✅ Your message has been sent successfully! We will get back to you within 24 hours.';
-                alert(successMessage);
-                
-                // Reset form
-                contactForm.reset();
-            } else {
-                throw new Error(data.message || 'Unknown error');
-            }
-        })
-        .catch(error => {
-            // Error message
-            const errorMessage = currentLang === 'tr'
-                ? '❌ Mesaj gönderilemedi. Lütfen tekrar deneyin veya doğrudan bizimle iletişime geçin.\n\nEmail: ngpharmacareinfo@gmail.com'
-                : '❌ Failed to send message. Please try again or contact us directly.\n\nEmail: ngpharmacareinfo@gmail.com';
-            alert(errorMessage);
-            console.error('Error:', error);
-        })
-        .finally(() => {
-            // Re-enable button
-            submitButton.disabled = false;
-            submitButton.textContent = originalText;
-        });
+        // FormSubmit will handle the actual submission via the form action
+        // The page will redirect or reload after submission
     });
 }
 
