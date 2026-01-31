@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - NG Pharma & Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">NG Pharma & Care</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-tr="Ana Sayfa" data-en="Home">Home</a></li>
+                    <li><a href="about.html" data-tr="Hakkımızda" data-en="About Us">About Us</a></li>
+                    <li><a href="services.html" data-tr="Hizmetler" data-en="Services">Services</a></li>
+                    <!--<li><a href="products.html" data-tr="Ürünler" data-en="Products">Products</a></li>-->
+                    <li><a href="contact.html" data-tr="İletişim" data-en="Contact" class="active">Contact</a></li>
+                                    <li class="language-switcher">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="tr">TR</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-tr="İletişim" data-en="Contact Us">Contact Us</h1>
+            <p data-tr="Uzman ekibimizle iletişime geçin" data-en="Get in touch with our team of experts">Get in touch with our team of experts</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2 data-tr="Bize Mesaj Gönderin" data-en="Send Us a Message">Send Us a Message</h2>
+                    <p class="form-intro" data-tr="Aşağıdaki formu doldurun, ekibimiz 24 saat içinde size geri dönecek." data-en="Fill out the form below and our team will get back to you within 24 hours.">Fill out the form below and our team will get back to you within 24 hours.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" data-tr="Ad *" data-en="First Name *">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" data-tr="Soyad *" data-en="Last Name *">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" data-tr="E-posta Adresi *" data-en="Email Address *">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" data-tr="Telefon Numarası" data-en="Phone Number">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company" data-tr="Şirket/Kuruluş" data-en="Company/Organization">Company/Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" data-tr="Konu *" data-en="Subject *">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" data-tr="Bir konu seçin" data-en="Select a subject">Select a subject</option>
+                                <option value="general" data-tr="Genel Sorgu" data-en="General Inquiry">General Inquiry</option>
+                                <option value="research">Research & Development</option>
+                                <option value="manufacturing">Contract Manufacturing</option>
+                                <option value="regulatory">Regulatory Consulting</option>
+                                <option value="products">Product Information</option>
+                                <option value="partnership" data-tr="Ortaklık Fırsatları" data-en="Partnership Opportunities">Partnership Opportunities</option>
+                                <option value="careers" data-tr="Kariyer" data-en="Careers">Careers</option>
+                                <option value="other" data-tr="Diğer" data-en="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-tr="Mesaj *" data-en="Message *">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent" data-tr="Kişisel verilerimin gizlilik politikasına göre işlenmesini kabul ediyorum *" data-en="I agree to the processing of my personal data according to the privacy policy *">I agree to the processing of my personal data according to the privacy policy *</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large" data-tr="Mesaj Gönder" data-en="Send Message">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-card">
+                        <h3 data-tr="İletişim Bilgileri" data-en="Contact Information">Contact Information</h3>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="info-text">
+                                <h4 data-tr="Adres" data-en="Address">Address</h4>
+                                <p data-tr="123 Science Park Drive" data-en="123 Science Park Drive">123 Science Park Drive<br data-tr="İnovasyon Bölgesi" data-en="Innovation District">Innovation District<br data-tr="Cambridge, MA 02139" data-en="Cambridge, MA 02139">Cambridge, MA 02139<br data-tr="Amerika Birleşik Devletleri" data-en="United States">United States</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="info-text">
+                                <h4 data-tr="Telefon" data-en="Phone">Phone</h4>
+                                <p data-tr="Ana Hat: +1 (555) 123-4567" data-en="Main: +1 (555) 123-4567">Main: +1 (555) 123-4567<br data-tr="Faks: +1 (555) 123-4568" data-en="Fax: +1 (555) 123-4568">Fax: +1 (555) 123-4568<br data-tr="Ücretsiz: +1 (800) 123-4567" data-en="Toll-free: +1 (800) 123-4567">Toll-free: +1 (800) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="info-text">
+                                <h4 data-tr="E-posta" data-en="Email">Email</h4>
+                                <p data-tr="Genel: info@ngpharma.com" data-en="General: info@ngpharma.com">General: info@ngpharma.com<br data-tr="Satış: sales@ngpharma.com" data-en="Sales: sales@ngpharma.com">Sales: sales@ngpharma.com<br data-tr="Kariyer: careers@ngpharma.com" data-en="Careers: careers@ngpharma.com">Careers: careers@ngpharma.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="info-text">
+                                <h4 data-tr="Çalışma Saatleri" data-en="Business Hours">Business Hours</h4>
+                                <p data-tr="Pazartesi - Cuma: 09:00 - 18:00 EST" data-en="Monday - Friday: 9:00 AM - 6:00 PM EST">Monday - Friday: 9:00 AM - 6:00 PM EST<br data-tr="Cumartesi: 10:00 - 14:00 EST" data-en="Saturday: 10:00 AM - 2:00 PM EST">Saturday: 10:00 AM - 2:00 PM EST<br data-tr="Pazar: Kapalı" data-en="Sunday: Closed">Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links Card -->
+                    <div class="quick-links-card">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="about.html" data-tr="Hakkımızda" data-en="About Us" data-tr="Şirketimiz Hakkında" data-en="About Our Company">About Our Company</a></li>
+                            <li><a href="services.html" data-tr="Hizmetler" data-en="Services" data-tr="Hizmetlerimizi Keşfedin" data-en="Explore Our Services">Explore Our Services</a></li>
+                            <li><a href="products.html" data-tr="Ürünler" data-en="Products" data-tr="Ürün Portföyünü Görüntüle" data-en="View Product Portfolio">View Product Portfolio</a></li>
+                            <li><a href="#" data-tr="Şirket Broşürünü İndir (PDF)" data-en="Download Company Brochure (PDF)">Download Company Brochure (PDF)</a></li>
+                            <li><a href="#" data-tr="Teklif İste" data-en="Request a Quote">Request a Quote</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Placeholder) -->
+    <section class="map-section">
+        <div class="map-placeholder">
+            <svg viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="1200" height="400" fill="#e5e5e5"/>
+                <circle cx="600" cy="200" r="30" fill="#1a5f5f"/>
+                <path d="M600 170l-15 30h30z" fill="#1a5f5f"/>
+                <text x="600" y="270" text-anchor="middle" font-family="Montserrat" font-size="16" fill="#333">123 Science Park Drive, Cambridge, MA</text>
+            </svg>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title" data-tr="Sıkça Sorulan Sorular" data-en="Frequently Asked Questions">Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4 data-tr="Tipik proje süreniz nedir?" data-en="What is your typical project timeline?">What is your typical project timeline?</h4>
+                    <p data-tr="Proje süreleri karmaşıklığa ve kapsama bağlı olarak değişir. Araştırma projeleri genellikle 6-12 ay sürerken, üretim ve düzenleyici danışmanlık projeleri 3-18 ay arasında değişebilir. Belirli bir süre tahmini için bizimle iletişime geçin." data-en="Project timelines vary depending on complexity and scope. Research projects typically take 6-12 months, while manufacturing and regulatory consulting projects can range from 3-18 months. Contact us for a specific timeline estimate.">Project timelines vary depending on complexity and scope. Research projects typically take 6-12 months, while manufacturing and regulatory consulting projects can range from 3-18 months. Contact us for a specific timeline estimate.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-tr="Uluslararası müşterilerle çalışıyor musunuz?" data-en="Do you work with international clients?">Do you work with international clients?</h4>
+                    <p data-tr="Evet, küresel olarak müşterilere hizmet veriyoruz ve ABD, AB ve Asya-Pasifik bölgeleri dahil birden fazla ülkede düzenleyici gereklilikler konusunda deneyime sahibiz." data-en="Yes, we serve clients globally and have experience with regulatory requirements in multiple countries including the US, EU, and Asia-Pacific regions.">Yes, we serve clients globally and have experience with regulatory requirements in multiple countries including the US, EU, and Asia-Pacific regions.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-tr="Hangi sertifikalara sahipsiniz?" data-en="What certifications do you hold?">What certifications do you hold?</h4>
+                    <p data-tr="GMP sertifikalıyız, ISO 9001:2015 uyumluyuz, FDA kayıtlıyız ve EMA uyumluyuz. Tesislerimiz düzenli olarak denetim ve teftiş geçirir." data-en="We are GMP certified, ISO 9001:2015 compliant, FDA registered, and EMA compliant. Our facilities undergo regular inspections and audits.">We are GMP certified, ISO 9001:2015 compliant, FDA registered, and EMA compliant. Our facilities undergo regular inspections and audits.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-tr="Konseptten pazara ürün geliştirmede yardımcı olabilir misiniz?" data-en="Can you help with product development from concept to market?">Can you help with product development from concept to market?</h4>
+                    <p data-tr="Kesinlikle. İlk araştırma ve formülasyon geliştirmeden üretim, düzenleyici onay ve piyasaya sürüme kadar tüm aşamaları kapsayan uçtan uca hizmetler sunuyoruz." data-en="Absolutely. We offer end-to-end services covering all stages from initial research and formulation development through manufacturing, regulatory approval, and market launch.">Absolutely. We offer end-to-end services covering all stages from initial research and formulation development through manufacturing, regulatory approval, and market launch.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-tr="Üretim için minimum sipariş miktarınız nedir?" data-en="What is your minimum order quantity for manufacturing?">What is your minimum order quantity for manufacturing?</h4>
+                    <p data-tr="Minimum sipariş miktarları ürün tipine göre değişir. 5.000 üniteye kadar küçük pilot partileri karşılayabilir ve tam ticari üretime kadar ölçeklendirebiliriz. Özel ihtiyaçlarınızı tartışmak için bizimle iletişime geçin." data-en="Minimum order quantities vary by product type. We can accommodate pilot batches as small as 5,000 units and scale up to full commercial production. Contact us to discuss your specific needs.">Minimum order quantities vary by product type. We can accommodate pilot batches as small as 5,000 units and scale up to full commercial production. Contact us to discuss your specific needs.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-tr="Teklif veya danışma nasıl talep ederim?" data-en="How do I request a quote or consultation?">How do I request a quote or consultation?</h4>
+                    <p data-tr="Yukarıdaki iletişim formunu doldurun veya e-posta veya telefon yoluyla doğrudan bize ulaşın. Proje gereksinimlerinizi tartışmak ve ayrıntılı bir teklif sunmak için ilk bir danışma planlayacağız." data-en="Simply fill out the contact form above or reach out to us directly via email or phone. We&#39;ll schedule an initial consultation to discuss your project requirements and provide a detailed proposal.">Simply fill out the contact form above or reach out to us directly via email or phone. We'll schedule an initial consultation to discuss your project requirements and provide a detailed proposal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Locations -->
+    <section class="locations-section">
+        <div class="container">
+            <h2 class="section-title" data-tr="Küresel Varlığımız" data-en="Our Global Presence">Our Global Presence</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <h4 data-tr="Genel Merkez - ABD" data-en="Headquarters - USA">Headquarters - USA</h4>
+                    <p>123 Science Park Drive<br>Cambridge, MA 02139<br>United States</p>
+                    <p class="location-phone">+1 (555) 123-4567</p>
+                </div>
+
+                <div class="location-card">
+                    <h4 data-tr="Avrupa Ofisi" data-en="European Office">European Office</h4>
+                    <p data-tr="45 İnovasyon Bulvarı" data-en="45 Innovation Boulevard">45 Innovation Boulevard<br data-tr="Frankfurt, 60486" data-en="Frankfurt, 60486">Frankfurt, 60486<br data-tr="Almanya" data-en="Germany">Germany</p>
+                    <p class="location-phone">+49 69 1234 5678</p>
+                </div>
+
+                <div class="location-card">
+                    <h4 data-tr="Asya-Pasifik Ofisi" data-en="Asia-Pacific Office">Asia-Pacific Office</h4>
+                    <p data-tr="789 Araştırma Caddesi" data-en="789 Research Avenue">789 Research Avenue<br data-tr="Singapur 138632" data-en="Singapore 138632">Singapore 138632<br data-tr="Singapur" data-en="Singapore">Singapore</p>
+                    <p class="location-phone">+65 6789 0123</p>
+                </div>
+
+                <div class="location-card">
+                    <h4 data-tr="Üretim Tesisi" data-en="Manufacturing Facility">Manufacturing Facility</h4>
+                    <p data-tr="321 Sanayi Parkı" data-en="321 Industrial Park">321 Industrial Park<br data-tr="New Jersey, 07001" data-en="New Jersey, 07001">New Jersey, 07001<br>United States</p>
+                    <p class="location-phone">+1 (555) 987-6543</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>NG Pharma & Care</h4>
+                    <p>Science-driven solutions for health and care, built on trust and evidence.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="about.html" data-tr="Hakkımızda" data-en="About Us">About Us</a></li>
+                        <li><a href="services.html" data-tr="Hizmetler" data-en="Services">Services</a></li>
+                        <li><a href="products.html" data-tr="Ürünler" data-en="Products">Products</a></li>
+                        <li><a href="contact.html" data-tr="İletişim" data-en="Contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="services.html#research">Research & Development</a></li>
+                        <li><a href="services.html#manufacturing">Contract Manufacturing</a></li>
+                        <li><a href="services.html#regulatory">Regulatory Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h5>Contact Info</h5>
+                    <ul>
+                        <li>Email: info@ngpharma.com</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Address: 123 Science Park</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NG Pharma & Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

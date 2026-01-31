@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - NG Pharma & Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">NG Pharma & Care</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-tr="Ana Sayfa" data-en="Home">Home</a></li>
+                    <li><a href="about.html" data-tr="Hakkımızda" data-en="About Us">About Us</a></li>
+                    <li><a href="services.html" data-tr="Hizmetler" data-en="Services">Services</a></li>
+                    <li><a href="products.html" data-tr="Ürünler" data-en="Products" class="active">Products</a></li>
+                    <li><a href="contact.html" data-tr="İletişim" data-en="Contact">Contact</a></li>
+                                    <li class="language-switcher">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="tr">TR</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-tr="Ürünlerimiz" data-en="Our Products">Our Products</h1>
+            <p data-tr="Bilimle desteklenen yenilikçi farmasötik ve kozmetik çözümler" data-en="Innovative pharmaceutical and cosmetic solutions backed by science">Innovative pharmaceutical and cosmetic solutions backed by science</p>
+        </div>
+    </section>
+
+    <!-- Products Introduction -->
+    <section class="products-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2 data-tr="Bilim Yoluyla İnovasyon" data-en="Innovation Through Science">Innovation Through Science</h2>
+                <p data-tr="Ürün portföyümüz, titiz araştırma, gelişmiş formülasyon teknikleri ve terapötik ile kozmetik ihtiyaçların derin anlaşılmasının doruk noktasını temsil eder. Her ürün en yüksek kalite, güvenlik ve etkinlik standartlarıyla geliştirilir." data-en="Our product portfolio represents the culmination of rigorous research, advanced formulation techniques, and a deep understanding of therapeutic and cosmetic needs. Each product is developed with the highest standards of quality, safety, and efficacy.">Our product portfolio represents the culmination of rigorous research, advanced formulation techniques, and a deep understanding of therapeutic and cosmetic needs. Each product is developed with the highest standards of quality, safety, and efficacy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <h2 class="section-title" data-tr="Ürün Kategorileri" data-en="Product Categories">Product Categories</h2>
+            
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="pharmaceutical" data-tr="Farmasötik" data-en="Pharmaceutical">Pharmaceutical</button>
+                <button class="tab-btn" data-category="cosmetic" data-tr="Kozmetik" data-en="Cosmetic">Cosmetic</button>
+                <button class="tab-btn" data-category="nutraceutical" data-tr="Nütrasötik" data-en="Nutraceutical">Nutraceutical</button>
+            </div>
+
+            <!-- Pharmaceutical Products -->
+            <div class="category-content active" id="pharmaceutical">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="250" fill="#1a5f5f"/>
+                                    <circle cx="150" cy="125" r="50" stroke="white" stroke-width="2" opacity="0.4"/>
+                                    <circle cx="150" cy="125" r="30" fill="white" opacity="0.2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 data-tr="Kardiyovasküler Tedaviler" data-en="Cardiovascular Therapeutics">Cardiovascular Therapeutics</h3>
+                            <p data-tr="Antihipertansifler ve kolesterol yönetimi dahil kalp sağlığı ve vasküler durumlar için gelişmiş formülasyonlar." data-en="Advanced formulations for heart health and vascular conditions, including antihypertensives and cholesterol management.">Advanced formulations for heart health and vascular conditions, including antihypertensives and cholesterol management.</p>
+                            <ul class="product-features">
+                                <li data-tr="Uzatılmış salınım formülasyonları" data-en="Extended-release formulations">Extended-release formulations</li>
+                                <li data-tr="Geliştirilmiş biyoyararlanım" data-en="Enhanced bioavailability">Enhanced bioavailability</li>
+                                <li data-tr="İyileştirilmiş hasta uyumu" data-en="Improved patient compliance">Improved patient compliance</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="250" fill="#1a5f5f"/>
+                                    <rect x="100" y="75" width="100" height="100" stroke="white" stroke-width="2" opacity="0.4" rx="5"/>
+                                    <path d="M125 100v50M150 125h-50" stroke="white" stroke-width="2" opacity="0.3"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 data-tr="Nörolojik İlaçlar" data-en="Neurological Medications">Neurological Medications</h3>
+                            <p data-tr="Nöropatik ağrı, epilepsi ve bilişsel geliştirme dahil nörolojik bozukluklar için özel tedaviler." data-en="Specialized treatments for neurological disorders including neuropathic pain, epilepsy, and cognitive enhancement.">Specialized treatments for neurological disorders including neuropathic pain, epilepsy, and cognitive enhancement.</p>
+                            <ul class="product-features">
+                                <li data-tr="MSS hedefli iletim" data-en="CNS-targeted delivery">CNS-targeted delivery</li>
+                                <li data-tr="Optimize edilmiş farmakokinetik" data-en="Optimized pharmacokinetics">Optimized pharmacokinetics</li>
+                                <li data-tr="Minimize edilmiş yan etkiler" data-en="Minimized side effects">Minimized side effects</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="250" fill="#1a5f5f"/>
+                                    <path d="M150 75l40 40-40 40-40-40z" stroke="white" stroke-width="2" opacity="0.4" fill="white" fill-opacity="0.15"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 data-tr="Anti-inflamatuar Ajanlar" data-en="Anti-Inflammatory Agents">Anti-Inflammatory Agents</h3>
+                            <p data-tr="İyileştirilmiş güvenlik profilleri ve hedefli etki mekanizmalarıyla inflamatuar durumlar için etkili çözümler." data-en="Effective solutions for inflammatory conditions with improved safety profiles and targeted action mechanisms.">Effective solutions for inflammatory conditions with improved safety profiles and targeted action mechanisms.</p>
+                            <ul class="product-features">
+                                <li data-tr="Seçici COX-2 inhibisyonu" data-en="Selective COX-2 inhibition">Selective COX-2 inhibition</li>
+                                <li data-tr="Gastrik dostu formülasyonlar" data-en="Gastric-friendly formulations">Gastric-friendly formulations</li>
+                                <li data-tr="Hızlı etki başlangıcı" data-en="Rapid onset of action">Rapid onset of action</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="250" fill="#1a5f5f"/>
+                                    <circle cx="150" cy="125" r="60" stroke="white" stroke-width="2" opacity="0.3"/>
+                                    <path d="M150 65v120M90 125h120" stroke="white" stroke-width="2" opacity="0.4"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 data-tr="Antimikrobiyal Tedaviler" data-en="Antimicrobial Therapies">Antimicrobial Therapies</h3>
+                            <p data-tr="Dirençli patojenleri ve ortaya çıkan bulaşıcı hastalıkları ele alan yeni nesil antibiyotikler ve antifungaller." data-en="Next-generation antibiotics and antifungals addressing resistant pathogens and emerging infectious diseases.">Next-generation antibiotics and antifungals addressing resistant pathogens and emerging infectious diseases.</p>
+                            <ul class="product-features">
+                                <li data-tr="Geniş spektrum kapsama" data-en="Broad-spectrum coverage">Broad-spectrum coverage</li>
+                                <li data-tr="Direnci minimize eden tasarım" data-en="Resistance-minimizing design">Resistance-minimizing design</li>
+                                <li data-tr="Geliştirilmiş doku penetrasyonu" data-en="Enhanced tissue penetration">Enhanced tissue penetration</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cosmetic Products -->
+            <div class="category-content" id="cosmetic">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="250" fill="#1a5f5f"/>
+                                    <circle cx="150" cy="125" r="45" stroke="white" stroke-width="2" opacity="0.4"/>
+                                    <circle cx="150" cy="125" r="30" stroke="white" stroke-width="2" opacity="0.3"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 data-tr="Gelişmiş Cilt Bakımı Sistemleri" data-en="Advanced Skincare Systems">Advanced Skincare Systems</h3>
+                            <p data-tr="Optimal sonuçlar için aktif bileşenleri yenilikçi iletim sistemleriyle birleştiren klinik sınıf cilt bakımı formülasyonları." data-en="Clinical-grade skincare formulations combining active ingredients with innovative delivery systems for optimal results.">Clinical-grade skincare formulations combining active ingredients with innovative delivery systems for optimal results.</p>
+                            <ul class="product-features">
+                                <li data-tr="Dermatolojik olarak test edilmiş" data-en="Dermatologically tested">Dermatologically tested</li>
+                                <li data-tr="Aktif bileşen optimizasyonu" data-en="Active ingredient optimization">Active ingredient optimization</li>
+                                <li data-tr="4-6 haftada görünür sonuçlar" data-en="Visible results in 4-6 weeks">Visible results in 4-6 weeks</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="250" fill="#1a5f5f"/>
+                                    <path d="M100 125c0-27.6 22.4-50 50-50s50 22.4 50 50" stroke="white" stroke-width="2" opacity="0.4"/>
+                                    <circle cx="150" cy="125" r="20" fill="white" opacity="0.2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 data-tr="Yaşlanma Karşıtı Çözümler" data-en="Anti-Aging Solutions">Anti-Aging Solutions</h3>
+                            <p data-tr="Kanıtlanmış etkinlik ve güvenlikle yaşlanmanın birden fazla işaretini hedefleyen bilimsel olarak formüle edilmiş ürünler." data-en="Scientifically formulated products targeting multiple signs of aging with proven efficacy and safety.">Scientifically formulated products targeting multiple signs of aging with proven efficacy and safety.</p>
+                            <ul class="product-features">
+                                <li data-tr="Peptit kompleksleri" data-en="Peptide complexes">Peptide complexes</li>
+                                <li data-tr="Retinoid teknolojisi" data-en="Retinoid technology">Retinoid technology</li>
+                                <li data-tr="Antioksidan koruma" data-en="Antioxidant protection">Antioxidant protection</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="250" fill="#1a5f5f"/>
+                                    <rect x="100" y="75" width="100" height="100" stroke="white" stroke-width="2" opacity="0.3" rx="10"/>
+                                    <circle cx="150" cy="125" r="30" stroke="white" stroke-width="2" opacity="0.4"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 data-tr="Düzeltici Kozmesetikler" data-en="Corrective Cosmeceuticals">Corrective Cosmeceuticals</h3>
+                            <p data-tr="Hiperpigmentasyon, akne ve hassasiyet dahil spesifik cilt sorunları için hedeflenmiş tedaviler." data-en="Targeted treatments for specific skin concerns including hyperpigmentation, acne, and sensitivity.">Targeted treatments for specific skin concerns including hyperpigmentation, acne, and sensitivity.</p>
+                            <ul class="product-features">
+                                <li data-tr="Medikal sınıf formülasyonlar" data-en="Medical-grade formulations">Medical-grade formulations</li>
+                                <li data-tr="Klinik olarak kanıtlanmış sonuçlar" data-en="Clinically proven results">Clinically proven results</li>
+                                <li data-tr="Hassas cilt için uygun" data-en="Suitable for sensitive skin">Suitable for sensitive skin</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="250" fill="#1a5f5f"/>
+                                    <path d="M120 100l30 25 30-25M120 150l30-25 30 25" stroke="white" stroke-width="2" opacity="0.4"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 data-tr="Saç Bakımı İnovasyonları" data-en="Hair Care Innovations">Hair Care Innovations</h3>
+                            <p data-tr="Saç dökülmesi, hasar onarımı ve saç derisi sağlığını ele alan profesyonel sınıf saç tedavileri." data-en="Professional-grade hair treatments addressing hair loss, damage repair, and scalp health.">Professional-grade hair treatments addressing hair loss, damage repair, and scalp health.</p>
+                            <ul class="product-features">
+                                <li data-tr="Büyüme stimülasyonu" data-en="Growth stimulation">Growth stimulation</li>
+                                <li data-tr="Folikül güçlendirme" data-en="Follicle strengthening">Follicle strengthening</li>
+                                <li data-tr="Hasar restorasyonu" data-en="Damage restoration">Damage restoration</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nutraceutical Products -->
+            <div class="category-content" id="nutraceutical">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="250" fill="#1a5f5f"/>
+                                    <path d="M150 75l20 50 50 5-40 35 10 50-40-25-40 25 10-50-40-35 50-5z" stroke="white" stroke-width="2" opacity="0.4" fill="white" fill-opacity="0.1"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 data-tr="Bağışıklık Destek Formülleri" data-en="Immune Support Formulas">Immune Support Formulas</h3>
+                            <p data-tr="Bağışıklık fonksiyonunu güçlendirmek ve genel sağlığı desteklemek için tasarlanmış kanıta dayalı takviyeler." data-en="Evidence-based supplements designed to strengthen immune function and support overall wellness.">Evidence-based supplements designed to strengthen immune function and support overall wellness.</p>
+                            <ul class="product-features">
+                                <li data-tr="Klinik olarak doğrulanmış bileşenler" data-en="Clinically validated ingredients">Clinically validated ingredients</li>
+                                <li data-tr="Optimal dozaj stratejileri" data-en="Optimal dosing strategies">Optimal dosing strategies</li>
+                                <li data-tr="Geliştirilmiş emilim" data-en="Enhanced absorption">Enhanced absorption</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="250" fill="#1a5f5f"/>
+                                    <path d="M150 75v150M75 125h150" stroke="white" stroke-width="3" opacity="0.3"/>
+                                    <circle cx="150" cy="125" r="40" stroke="white" stroke-width="2" opacity="0.4"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 data-tr="Eklem & Kemik Sağlığı" data-en="Joint & Bone Health">Joint & Bone Health</h3>
+                            <p data-tr="Kas-iskelet sağlığı ve mobilite için kapsamlı besinsel destek." data-en="Comprehensive nutritional support for musculoskeletal health and mobility.">Comprehensive nutritional support for musculoskeletal health and mobility.</p>
+                            <ul class="product-features">
+                                <li data-tr="Kolajen peptitleri" data-en="Collagen peptides">Collagen peptides</li>
+                                <li data-tr="Glukozamin kompleksi" data-en="Glucosamine complex">Glucosamine complex</li>
+                                <li data-tr="Vitamin D3 + K2" data-en="Vitamin D3 + K2">Vitamin D3 + K2</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="250" fill="#1a5f5f"/>
+                                    <circle cx="150" cy="125" r="50" stroke="white" stroke-width="2" opacity="0.3"/>
+                                    <circle cx="150" cy="125" r="35" fill="white" opacity="0.15"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 data-tr="Bilişsel Geliştirme" data-en="Cognitive Enhancement">Cognitive Enhancement</h3>
+                            <p data-tr="Hafıza, odaklanma ve zihinsel berraklığı destekleyen nootropik formülasyonlar." data-en="Nootropic formulations supporting memory, focus, and mental clarity.">Nootropic formulations supporting memory, focus, and mental clarity.</p>
+                            <ul class="product-features">
+                                <li data-tr="Nöroprotektif bileşikler" data-en="Neuroprotective compounds">Neuroprotective compounds</li>
+                                <li data-tr="Bilişsel fonksiyon desteği" data-en="Cognitive function support">Cognitive function support</li>
+                                <li data-tr="Doğal bileşenler" data-en="Natural ingredients">Natural ingredients</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="250" fill="#1a5f5f"/>
+                                    <path d="M100 175c25-50 75-50 100 0" stroke="white" stroke-width="3" opacity="0.4" fill="none"/>
+                                    <circle cx="125" cy="100" r="15" fill="white" opacity="0.2"/>
+                                    <circle cx="175" cy="100" r="15" fill="white" opacity="0.2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 data-tr="Sindirim Sağlığı" data-en="Digestive Wellness">Digestive Wellness</h3>
+                            <p data-tr="Optimal bağırsak sağlığı ve sindirim fonksiyonu için probiyotik ve prebiyotik formülasyonlar." data-en="Probiotic and prebiotic formulations for optimal gut health and digestive function.">Probiotic and prebiotic formulations for optimal gut health and digestive function.</p>
+                            <ul class="product-features">
+                                <li data-tr="Çok suşlu probiyotikler" data-en="Multi-strain probiotics">Multi-strain probiotics</li>
+                                <li data-tr="Sindirim enzimi desteği" data-en="Digestive enzyme support">Digestive enzyme support</li>
+                                <li data-tr="Bağırsak bariyeri koruması" data-en="Gut barrier protection">Gut barrier protection</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Development Process -->
+    <section class="development-process">
+        <div class="container">
+            <h2 class="section-title" data-tr="Ürün Geliştirme Yolculuğumuz" data-en="Our Product Development Journey">Our Product Development Journey</h2>
+            <p class="section-subtitle" data-tr="Konseptten ticarileştirmeye, her ürün titiz geliştirmeden geçer" data-en="From concept to commercialization, every product undergoes rigorous development">From concept to commercialization, every product undergoes rigorous development</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h4 data-tr="Araştırma & Keşif" data-en="Research & Discovery">Research & Discovery</h4>
+                        <p data-tr="Terapötik ihtiyaçların belirlenmesi ve aktif bileşen taraması" data-en="Identification of therapeutic needs and active ingredient screening">Identification of therapeutic needs and active ingredient screening</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h4 data-tr="Formülasyon Geliştirme" data-en="Formulation Development">Formulation Development</h4>
+                        <p data-tr="Stabilite, etkinlik ve güvenlik için formülasyonların optimizasyonu" data-en="Optimization of formulations for stability, efficacy, and safety">Optimization of formulations for stability, efficacy, and safety</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h4 data-tr="Klinik Test" data-en="Clinical Testing">Clinical Testing</h4>
+                        <p data-tr="Güvenlik ve etkinliği doğrulamak için kapsamlı klinik denemeler" data-en="Comprehensive clinical trials to validate safety and efficacy">Comprehensive clinical trials to validate safety and efficacy</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h4 data-tr="Düzenleyici Onay" data-en="Regulatory Approval">Regulatory Approval</h4>
+                        <p data-tr="İlgili düzenleyici otoritelerden başvuru ve onay" data-en="Submission and approval from relevant regulatory authorities">Submission and approval from relevant regulatory authorities</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">5</div>
+                    <div class="timeline-content">
+                        <h4 data-tr="Ticari Lansman" data-en="Commercial Launch">Commercial Launch</h4>
+                        <p data-tr="Üretim ölçeklendirme ve piyasa girişi" data-en="Manufacturing scale-up and market introduction">Manufacturing scale-up and market introduction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Standards -->
+    <section class="quality-standards">
+        <div class="container">
+            <h2 class="section-title" data-tr="Kalite Taahhüdümüz" data-en="Our Quality Commitment">Our Quality Commitment</h2>
+            <div class="standards-grid">
+                <div class="standard-card">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32 8L8 20v20c0 15 10 25 24 28 14-3 24-13 24-28V20L32 8z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M24 32l6 6 10-12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <h4 data-tr="GMP Sertifikalı" data-en="GMP Certified">GMP Certified</h4>
+                    <p data-tr="Tüm ürünler GMP uyumlu tesislerde üretilir" data-en="All products manufactured in GMP-compliant facilities">All products manufactured in GMP-compliant facilities</p>
+                </div>
+
+                <div class="standard-card">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2"/>
+                        <path d="M32 22v10l8 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <h4 data-tr="Kalite Testi Yapılmış" data-en="Quality Tested">Quality Tested</h4>
+                    <p data-tr="Üretimin her aşamasında titiz test" data-en="Rigorous testing at every stage of production">Rigorous testing at every stage of production</p>
+                </div>
+
+                <div class="standard-card">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="16" y="16" width="32" height="32" stroke="currentColor" stroke-width="2" rx="4"/>
+                        <path d="M24 32h16M32 24v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <h4 data-tr="Bilimsel Olarak Doğrulanmış" data-en="Scientifically Validated">Scientifically Validated</h4>
+                    <p data-tr="Kanıtlanmış etkinliğe sahip kanıta dayalı formülasyonlar" data-en="Evidence-based formulations with proven efficacy">Evidence-based formulations with proven efficacy</p>
+                </div>
+
+                <div class="standard-card">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32 12v40M12 32h40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="32" cy="32" r="16" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <h4 data-tr="Düzenleyici Uyumlu" data-en="Regulatory Compliant">Regulatory Compliant</h4>
+                    <p data-tr="Tüm FDA, EMA ve uluslararası standartları karşılama" data-en="Meeting all FDA, EMA, and international standards">Meeting all FDA, EMA, and international standards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-tr="Ürünlerimizle İlgileniyor musunuz?" data-en="Interested in Our Products?">Interested in Our Products?</h2>
+                <p data-tr="Ürün portföyümüz hakkında daha fazla bilgi edinmek veya özel geliştirme fırsatlarını tartışmak için bizimle iletişime geçin." data-en="Contact us to learn more about our product portfolio or discuss custom development opportunities.">Contact us to learn more about our product portfolio or discuss custom development opportunities.</p>
+                <a href="contact.html" class="btn btn-primary btn-large" data-tr="Ekibimizle İletişime Geçin" data-en="Contact Our Team">Contact Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>NG Pharma & Care</h4>
+                    <p>Science-driven solutions for health and care, built on trust and evidence.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="about.html" data-tr="Hakkımızda" data-en="About Us">About Us</a></li>
+                        <li><a href="services.html" data-tr="Hizmetler" data-en="Services">Services</a></li>
+                        <li><a href="products.html" data-tr="Ürünler" data-en="Products">Products</a></li>
+                        <li><a href="contact.html" data-tr="İletişim" data-en="Contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="services.html#research">Research & Development</a></li>
+                        <li><a href="services.html#manufacturing">Contract Manufacturing</a></li>
+                        <li><a href="services.html#regulatory">Regulatory Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h5>Contact Info</h5>
+                    <ul>
+                        <li>Email: info@ngpharma.com</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Address: 123 Science Park</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NG Pharma & Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
